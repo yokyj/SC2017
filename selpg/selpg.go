@@ -29,10 +29,10 @@ func usage() {
 	fmt.Printf("\nUSAGE: %s -sstart_page -eend_page [-f | -llines_per_page] [-ddest] [in_filename]\n", progname)
 }
 
-func process_args(ac int, av []string, psa *sp_args) {
+func process_args(ac int, av []string, sa *sp_args) {
 	var s1,s2 string
 	var argno,i int
-	var sa = &psa
+	// var sa = &psa
 
 	if ac < 3 {
 		fmt.Printf("%s: not enough arguments\n", progname)
